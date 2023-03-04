@@ -3,6 +3,7 @@ package controller
 import (
 	"encoding/json"
 	"github/ninjadiego/demo-crud-rest-api-go/commons"
+	"github/ninjadiego/demo-crud-rest-api-go/models"
 	"log"
 	"net/http"
 
@@ -10,7 +11,7 @@ import (
 )
 
 func GetALL(writer http.ResponseWriter, request *http.Request) {
-	personas := []models.persona{}
+	personas := []models.Persona
 	db := commons.Getconnection()
 	defer db.close()
 

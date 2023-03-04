@@ -2,7 +2,7 @@ package models
 
 import "github.com/jinzhu/gorm"
 
-type persona struct {
+type Persona struct {
 	gorm.Model
 
 	ID        int64  `json:"id"`
